@@ -16,7 +16,7 @@ beforeEach(async () => {
 test('checks if the text in the first header is correct', async () => {
     let title = await drivervariable.findElement(By.css('h1'))
     let expectedTitle = await title.getText();
-    expect(expectedTitle).toMatch(/Hä kan vi leka med en stack/);
+    expect(expectedTitle).toMatch(/Här kan vi leka med en stack/);
 });
 
 test('checks if the span is n/a', async () => {
